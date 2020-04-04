@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Button clicker and Alarm clock</string>
+    <string name="student_one">Стұдент бір</string>
+    <string name="student_two">Стұдент екі</string>
+    <string name="long_clicked">Ұзақ басылды</string>
+    <string name="clicked">Басылды</string>
+    <string name="clicked_down">Түртіңіз</string>
+
+    <string name="button_click">Нұқыңыз</string>
+    <string name="button_longclick">Ұзақ нұқыңыз</string>
+    <string name="touch">Tүртіңіз</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Button clicker and Alarm clock</string>
+    <string name="student_one">Student one</string>
+    <string name="student_two">Student two</string>
+    <string name="clicked">Clicked</string>
+    <string name="long_clicked">Long clicked</string>
+    <string name="clicked_down">Touched</string>
+
+    <string name="button_click">Click</string>
+    <string name="button_longclick">Long click</string>
+    <string name="touch">Touch</string>
+
+</resources>

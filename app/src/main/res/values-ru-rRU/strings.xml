@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Button clicker and Alarm clock</string>
+    <string name="student_one">Первый студент</string>
+    <string name="student_two">Второй студент</string>
+    <string name="clicked">Нажато</string>
+    <string name="long_clicked">Зажато</string>
+    <string name="clicked_down">"Прикоснулся"</string>
+
+    <string name="button_click">Нажми</string>
+    <string name="button_longclick">Зажми</string>
+    <string name="touch">Прикоснись</string>
+</resources>
