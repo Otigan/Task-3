@@ -21,6 +21,8 @@ public class AlertReciever extends BroadcastReceiver {
 
         notificationManager = NotificationManagerCompat.from(context);
 
+
+        //Creating notification for old version
         Notification notification12 = new Notification.Builder(context)
                 .setContentTitle("TEST")
                 .setContentText("provekra")
@@ -32,10 +34,11 @@ public class AlertReciever extends BroadcastReceiver {
                 .build();
 
 
+        //Notification for new versions of android API
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             Notification notification = new NotificationCompat.Builder(context, NotificationHelper.getChannel1Id())
                     .setSmallIcon(R.drawable.ic_launcher_background)
-                    .setContentText("AAAA")
+                    .setContentText("SampleText")
                     .setContentTitle("Alarm")
                     .build();
 

@@ -10,13 +10,11 @@ import android.os.Build;
 
 import androidx.core.app.NotificationManagerCompat;
 
+
+//New android API require to create NotificationChannel for notifications
 public class NotificationHelper extends Application {
     public static final String CHANNEL_1_ID = "CHANNEL 1";
 
-    public static final String CHANNEL_2_ID = "CHANNEL 2";
-
-
-    public static String getChannel2Id() { return  CHANNEL_2_ID; }
 
     public static String getChannel1Id() {
         return CHANNEL_1_ID;
@@ -37,14 +35,11 @@ public class NotificationHelper extends Application {
                     NotificationManager.IMPORTANCE_HIGH
             );
 
-
             channel.enableVibration(true);
             channel.getSound();
 
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel);
-
-
         }
     }
 }

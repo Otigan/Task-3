@@ -48,20 +48,15 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
         setContentView(R.layout.activity_main);
 
 
+        //Instance of NotificationManager
         notificationManager = NotificationManagerCompat.from(this);
 
-
+        //Getting views
         clicked = findViewById(R.id.button);
         longClicked = findViewById(R.id.button3);
         clickedDown = findViewById(R.id.button2);
-
         text_time = findViewById(R.id.time);
-
         btn = findViewById(R.id.time_picker);
-
-
-
-        notificationManager = NotificationManagerCompat.from(this);
 
 
         clicked.setOnClickListener(new View.OnClickListener() {
@@ -140,6 +135,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
             c.add(Calendar.DATE, 1);
         }
 
+        //For old android API version
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
 
